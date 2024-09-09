@@ -10,6 +10,20 @@
 #include <dt-bindings/zmk/rgb.h>
 
 / {
+    combos {
+        compatible = "zmk,combos";
+
+        number_pad {
+            bindings = <&sl 3>;
+            key-positions = <38 39>;
+        };
+
+        rgb_settings {
+            bindings = <&sl 4>;
+            key-positions = <38 39 35>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 

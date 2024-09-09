@@ -14,12 +14,12 @@
         compatible = "zmk,combos";
 
         number_pad {
-            bindings = <&sl 3>;
+            bindings = <&tog 3>;
             key-positions = <38 39>;
         };
 
         rgb_settings {
-            bindings = <&sl 4>;
+            bindings = <&tog 4>;
             key-positions = <38 39 35>;
         };
     };

@@ -14,13 +14,13 @@
         compatible = "zmk,combos";
 
         number_pad {
-            bindings = <&tog 3>;
+            bindings = <&to 3>;
             key-positions = <38 39>;
         };
 
         rgb_settings {
-            bindings = <&tog 4>;
-            key-positions = <38 39 35>;
+            bindings = <&to 4>;
+            key-positions = <14 3 5>;
         };
     };
 
@@ -77,7 +77,7 @@
 &trans            &trans  &trans  &trans  &trans     &trans    &kp CLEAR      &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp MINUS  &trans
 &kp LEFT_SHIFT    &trans  &trans  &trans  &trans     &trans    &kp BACKSLASH  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp PLUS   &trans
 &kp LEFT_CONTROL  &trans  &trans  &kp C   &kp V      &trans    &kp ASTERISK   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp ENTER  &trans
-                                  &trans  &kp SPACE  &sl 0     &sl 0          &kp NUMBER_0  &kp PERIOD
+                                  &trans  &kp SPACE  &to 0     &to 0          &kp NUMBER_0  &kp PERIOD
             >;
         };
 
@@ -85,8 +85,8 @@
             bindings = <
 &rgb_ug RGB_TOG  &rgb_ug RGB_COLOR_HSB(2,49,41)  &rgb_ug RGB_COLOR_HSB(229,65,41)  &trans  &trans  &trans    &trans  &trans           &rgb_ug RGB_BRI  &trans           &trans  &trans
 &trans           &trans                          &trans                            &trans  &trans  &trans    &trans  &rgb_ug RGB_HUD  &trans           &rgb_ug RGB_HUI  &trans  &trans
-&kp LEFT_GUI     &trans                          &trans                            &trans  &trans  &trans    &trans  &trans           &rgb_ug RGB_BRD  &trans           &trans  &kp RIGHT_GUI
-                                                                                   &trans  &trans  &sl 0     &sl 0   &trans           &trans
+&kp LGUI         &trans                          &trans                            &trans  &trans  &trans    &trans  &trans           &rgb_ug RGB_BRD  &trans           &trans  &kp RIGHT_GUI
+                                                                                   &trans  &trans  &to 0     &to 0   &trans           &trans
             >;
         };
     };

@@ -57,12 +57,21 @@
             >;
         };
 
-        layer_3 {
+        layer_2 {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans    &kp CLEAR   &kp N7        &kp N8        &kp N9        &kp MINUS   &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &kp SLASH   &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp PLUS    &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &kp ASTRK   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PERIOD  &trans
                         &trans  &trans  &none     &kp K_CALC  &kp ENTER     &kp N0
+            >;
+        };
+
+        layer_3 {
+            bindings = <
+&trans         &trans  &trans  &trans  &trans  &trans    &trans  &trans        &kp LG(UP_ARROW)  &trans         &trans  &trans
+&trans         &trans  &trans  &trans  &trans  &trans    &trans  &kp LG(LEFT)  &kp LG(DOWN)      &kp LG(RIGHT)  &trans  &trans
+&kp LA(LCTRL)  &trans  &trans  &trans  &trans  &trans    &trans  &trans        &none             &trans         &trans  &trans
+                               &trans  &trans  &trans    &trans  &trans        &trans
             >;
         };
     };

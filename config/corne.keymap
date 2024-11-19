@@ -48,7 +48,7 @@
 
             bindings = <
 &kp ESCAPE        &kp Q  &kp W  &kp E                 &kp R      &kp T    &kp Y  &kp U      &kp I       &kp O    &kp P     &kp BSPC
-&kp TAB           &kp A  &kp S  &kp D                 &kp F      &kp G    &kp H  &kp J      &kp K       &kp L    &kp SEMI  &kp SQT
+&hold_tap 4 TAB   &kp A  &kp S  &kp D                 &kp F      &kp G    &kp H  &kp J      &kp K       &kp L    &kp SEMI  &kp SQT
 &kp LEFT_CONTROL  &kp Z  &kp X  &kp C                 &kp V      &kp B    &kp N  &kp M      &kp COMMA   &kp DOT  &kp FSLH  &kp RIGHT_SHIFT
                                 &hold_tap 3 LEFT_GUI  &kp SPACE  &mo 1    &mo 0  &kp ENTER  &kp DELETE
             >;
@@ -84,6 +84,15 @@
 &trans         &trans  &trans  &trans  &trans  &trans    &trans  &kp LG(LEFT)  &kp LG(DOWN)      &kp LG(RIGHT)  &trans  &trans
 &kp LA(LCTRL)  &trans  &trans  &trans  &trans  &trans    &trans  &trans        &none             &trans         &trans  &trans
                                &trans  &trans  &trans    &trans  &trans        &trans
+            >;
+        };
+
+        layer_4 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans              &kp LS(UP_ARROW)    &trans          &trans        &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp LS(LEFT_ARROW)  &kp LS(DOWN_ARROW)  &kp LS(RIGHT)   &kp UP_ARROW  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans              &trans              &kp LEFT_ARROW  &kp DOWN      &kp RIGHT
+                        &trans  &trans  &trans    &trans  &trans              &trans
             >;
         };
     };
